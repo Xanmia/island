@@ -1,0 +1,69 @@
+body {
+    margin: 0; 
+    padding: 0; 
+       background-color: #2e004f;
+
+			}
+
+			canvas {
+				cursor: pointer;
+				display: block;
+				left: 0;
+				position: absolute;
+				top: 0;
+				
+				
+			}
+			
+		    .note {
+		      transform: scale(0, 0);
+		      position: absolute;
+		      max-width: 100px;
+		      color: black;
+		      background-color: white;
+		      padding: 2px 5px;
+		      border-radius: 4px;
+		      font: 10px 'Open Sans', sans-serif;
+		      box-shadow: 0px 0px 10px rgba(10, 10, 10, .9);
+		    }
+ 
+		    .ani {
+				animation: party 30s linear infinite;
+		      animation: shimmy 3s ease-in-out
+		    }
+ 
+ 		   	@keyframes party {
+  		      20% {
+  		        transform: translate(-10px, 10px);
+  		      }
+  		      40% {
+  		        transform: translate(20px, -15px);
+  		      }
+  		      60% {
+  		        transform: translate(15px, 15px);
+  		      }
+ 		   		90% {transform: rotate(5deg);
+				}
+ 		   	}
+ 
+		    @keyframes shimmy {
+		      3% {
+		        transform: scale(1, 1);
+		      }
+		      20% {
+		        transform: translate(-1px, 1px);
+		      }
+		      40% {
+		        transform: translate(1px, -1px);
+		      }
+		      60% {
+		        transform: translate(1px, 1px);
+		      }
+		      95% {
+		        transform: translate(0px, 0px);
+		      }
+		      100% {
+				  
+		        transform:  translate(0px, 20px) scale(.05, .05) rotate(150deg);
+		      }
+		    }
